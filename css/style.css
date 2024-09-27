@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --bg-white: hsl(0, 0%, 100%);
+  --title-color: hsl(14, 45%, 36%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --text-size-paragraph: 16px;
+  --family-Young-Serif: "Young Serif", serif;
+  --family-outfit: "Outfit", sans-serif;
+  --weight-100: 100;
+  --weight-200: 200;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  --weight-800: 800;
+  --Mobile: 375px;
+  --Desktop: 1440px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* width: var(--Desktop); */
+  font-size: var(--text-size-paragraph);
+  font-family: var(--font-family-Young-Serif);
+  font-weight: var(--font-weight-400);
+  line-height: 1.7;
+}
+
+/* content */
+.container {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.c-img {
+  text-align: center;
+}
+
+.c-img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* title */
+.c-title h1 {
+  opacity: 80%;
+  font-size: 60px;
+  line-height: 1.7;
+}
+
+.c-title p {
+  font-size: 18px;
+}
+
+/* prepare time */
+.c-prepare-time {
+  margin: 25px 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: var(--Rose-50);
+}
+
+.c-prepare-time h3 {
+  color: var(--Rose-800);
+}
+
+.c-prepare-time ul {
+  margin-left: 3.5%;
+}
+
+.c-prepare-time ul li {
+  padding-left: 18px;
+}
+
+.c-prepare-time ul li::marker {
+  color: var(--Rose-800);
+}
+
+.c-prepare-time ul li span {
+  font-weight: 800;
+  opacity: 80%;
+  font-family: var(--family-Young-Serif);
+}
+
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
+  color: var(--title-color);
+  font-family: var(--family-Young-Serif);
+  opacity: 85%;
+}
+
+.ingredients ul li::marker,
+.instructions ol li::marker {
+  color: var(--title-color);
+}
+
+.ingredients ul,
+.instructions ol {
+  margin: 10px;
+}
+
+.ingredients ul li,
+.instructions ol li {
+  margin-left: 6px;
+  padding-left: 18px;
+  font-size: 17px;
+  font-family: var(--family-Young-Serif);
+  opacity: 80%;
+}
+
+.instructions {
+  margin-top: 10px;
+}
+
+.nutrition {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nutrition p,
+table {
+  font-size: 18px;
+  font-family: var(--family-Young-Serif);
+  opacity: 80%;
+}
+
+table {
+  width: 100%;
+}
+
+table tr td {
+  padding-top: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.span {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  height: 60;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 765px) {
+  .container {
+    width: 100%;
+    padding: 2%;
+    margin-top: 0;
+  }
+
+  .c-img img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  /* title */
+  .c-title h1 {
+    opacity: 100%;
+    font-size: 40px;
+  }
+
+  .c-title p {
+    font-size: 16px;
+  }
+}
